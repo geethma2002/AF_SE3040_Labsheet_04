@@ -1,11 +1,8 @@
 console.log("AF Labsheet 4 is completed.");
 
-// app.js
-
-// 1️⃣ Read file
 const fs = require('fs');
 
-fs.readFile('file.txt', 'utf8', function (err, data) {
+fs.writeFile('file.txt', 'Hello World!', function (err) {
   if (err) throw err;
-  console.log(data);
+  console.log('File saved!');
 });
