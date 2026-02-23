@@ -1,18 +1,6 @@
 console.log("AF Labsheet 4 is completed.");
 
- feature/Geethma/Making_an_HTTP_request
-const https = require('https'); 
-https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => { 
-  let data = ''; 
- 
-  resp.on('data', (chunk) => { 
-    data += chunk; 
-  }); 
- 
-  resp.on('end', () => { 
-    console.log(JSON.parse(data)); 
-  }); 
-}).on('error', (err) => { 
-  console.log("Error: " + err.message); 
-});
+ feature/Geethma/Using_a_module
+const myModule = require('./my-module.js'); 
+console.log(myModule.myFunction()); 
 
